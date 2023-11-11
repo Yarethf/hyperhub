@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Hyperhub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="images/png">
+    <!-- Fontawesome Link for Icons -->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">HYPERHUB TEAM</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="#home">INICIO</a></li>
+          <li><a href="#services">SERVICIOS</a></li>
+          <li><a href="#portfolio">PORTAFOLIO</a></li>
+          <li><a href="https://discord.gg/aaCJGUP3PA">DISCORD</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h1>SASSER DEV</h1>
+          <p>
+            Hola soy sasser dueño de HyperHub Team. <br> Aqui podras mis capacidades.</p>
+        </div>
+        <a href="#services">Ver servicios</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Mis servicios</h2>
+      <p class="hola">Aqui encontraras todo lo que puedo hacer y podras ver mi trabajo.</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="images/tents.jpg" alt="img">
+          <h3>Configuracion de servidores</h3>
+          <p>Tengo 4 años configurando cualquier tipo de servidor.</p>
+          <a class="ov-btn-slide-left">PRECIOS DESDE 30$</a>
+        </li>
+        <li class="card">
+          <img src="images/bags.jpg" alt="img">
+          <h3>Protección de servidores</h3>
+          <p>Protección para tu servidor de minecraft o network.</p>
+          <a class="ov-btn-slide-left">PRECIOS DESDE 10$</a>
+        </li>
+        <li class="card">
+          <img src="images/stoves.gif" alt="img">
+          <h3>Creación de bot de discord</h3>
+          <p>Creo bots de discord a tu gusto.</p>
+          <a class="ov-btn-slide-left">PRECIOS DESDE 20$</a>
+        </li>
+        <li class="card">
+          <img src="images/backpacks.jpg" alt="img">
+          <h3>Configuración de tu comunidad de Discord</h3>
+          <p>Configuramos tu comunidad a tu gusto, los precios varian segun tus necesidades</p>
+          <a class="ov-btn-slide-left">PRECIOS DESDE 50$</a>
+        </li>
+        <li class="card">
+          <img src="images/chair.jpg" alt="img">
+          <h3>Tebex</h3>
+          <p>Configuramos tu tienda virtual para que generes dinero con tu servidor o network.</p>
+          <a class="ov-btn-slide-left">PRECIOS DESDE 50$</a>
+        </li>
+        <li class="card">
+          <img src="images/light.gif" alt="img">
+          <h3>Creación de plugins</h3>
+          <p>Estamos centrados en la creación de plugins para minecraft.</p>
+          <a class="ov-btn-slide-left">PRECIOS DESDE 50$</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2>PORTAFOLIO</h2>
+      <p>veras todas mis capacidades.</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="images/camping-1.jpg" alt="img">
+          <h3>Tab personalizado</h3>
+          <p>Decoracion de tab.</p>
+        </li>
+        <li class="card">
+          <img src="images/camping-2.jpg" alt="img">
+          <h3>Menus</h3>
+          <p>Menus personalizado y decorados.</p>
+        </li>
+        <li class="card">
+          <img src="images/camping-3.jpg" alt="img">
+          <h3>Modelado 3D</h3>
+          <p>Tambien manejamos texturas y modelado 3D.</p>
+        </li>
+        <li class="card">
+          <img src="images/camping-4.jpg" alt="img">
+          <h3>Seguridad en tu Network</h3>
+          <p>Especializados en la seguridad para evitar grifeos o exploit.</p>
+        </li>
+        <li class="card">
+          <img src="images/camping-5.jpg" alt="img">
+          <h3>Decoracion y configuracion de discord</h3>
+          <p>Especializados en configuracion de comunidades en discord.</p>
+        </li>
+        <li class="card">
+          <img src="images/camping-6.jpg" alt="img">
+          <h3>Creacion de Bots</h3>
+          <p>Creamos bots propios de discord.</p>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>
+        <span>Copyright © HyperHub Team</span>
+        <span class="link">
+            <a href="#">Inicio</a>
+        </span>
+      </div>
+    </footer>
+    <script>
+window.addEventListener('scroll', function() {
+  var scrollValue = window.pageYOffset;
+  var backgroundPos = scrollValue * 0.5; // Ajusta el factor 0.5 para controlar la velocidad
+  document.querySelector('.homepage').style.backgroundPosition = 'center ' + backgroundPos + 'px';
+  var backgroundPosPortfolio = scrollValue * 0.5;
+  document.querySelector('.portfolio').style.backgroundPosition = 'center ' + backgroundPosPortfolio + 'px';
+});
+    </script>
+  </body>
+</html>
